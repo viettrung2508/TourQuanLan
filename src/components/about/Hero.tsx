@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className=" relative">
       <img src="/bg.jpg" className="h-[700px] w-full object-cover" />
-      <div className="absolute top-10 text-right text-white font-bold right-10 w-1/2 ">
+      <div className="absolute top-24 text-right text-white font-bold right-10 w-1/2 ">
         <h1>Chúng tôi là</h1>
         <p>
           {" "}
