@@ -45,7 +45,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`flex justify-center shadow-md bg-gray-100 p-4 fixed top-0 left-0 right-0 ${isOpacity ? 'bg-opacity-90' : 'bg-opacity-100'} z-10`} ref={ref}>
+    <div className={`flex justify-center shadow-md bg-gray-100 p-4 fixed top-0 left-0 right-0 ${isOpacity ? 'bg-opacity-90' : 'bg-opacity-100'} z-50`} ref={ref}>
       <div className="flex max-w-screen-2xl items-center">
         <div className="flex items-center w-[168px] gap-2">
           <img src="/logov.png" className="w-12 h-12" />
