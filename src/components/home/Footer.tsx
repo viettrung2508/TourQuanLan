@@ -7,11 +7,16 @@ export default function Footer() {
     <div className=" text-black font-thin pb-16">
       <div className="grid grid-cols-10 mx-auto max-w-screen-2xl">
         <div className="col-span-2">
+          <img src="logo.png" className="w-40" />
           <p className=" text-sm mb-4">
             Chúng tôi luôn sẵn sàng giúp du khách khám phá Quan Lạn một cách
             trọn vẹn nhất
           </p>
           <h1 className="text-xl font-bold">Theo dõi chúng tôi</h1>
+          <div className="flex space-x-4">
+            <img src="fb2.png" className="w-12" />
+            <img src="tiktok1.png" className="w-12" />
+          </div>
         </div>
         <div className="col-span-4 ">
           <div>
@@ -44,8 +49,6 @@ export default function Footer() {
           </div>
         </div>
 
-       
-
         <div className="col-span-2">
           <div>
             <h1 className=" text-xl font-bold mb-4">Danh mục sản phẩm</h1>
@@ -65,7 +68,9 @@ export default function Footer() {
           </div>
           <div className="space-y-2">
             <div className="flex space-x-2">
-              <ImFacebook size={20} />
+              <img src="zalo.png" className="w-12" />
+              <img src="whatapp.png" className="w-12" />
+              <img src="mess.png" className="w-12" />
             </div>
           </div>
         </div>
