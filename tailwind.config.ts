@@ -49,7 +49,15 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+				label: '#737373',
+				primary_green: {
+					DEFAULT: '#138140',
+					bold: '#134f46'
+				},
+				primary_bg: {
+					DEFAULT: '#f8f3ed',
+				}
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -80,6 +88,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/line-clamp'),],
 };
 export default config;
