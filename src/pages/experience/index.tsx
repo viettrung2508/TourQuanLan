@@ -1,6 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import ChipTag from "./common/components/ChipTag";
+import ChipTag from "../../common/experience/components/ChipTag";
 import Pagination from "@/components/pagination/Pagination";
 import { useState } from "react";
 

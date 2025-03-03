@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import ChipTag from "@/pages/experience/common/components/ChipTag";
+import ChipTag from "@/common/experience/components/ChipTag";
 
 export default function SliderView() {
   return (

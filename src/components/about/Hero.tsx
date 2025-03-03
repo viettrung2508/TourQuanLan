@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { WavyBackground } from "../ui/wavy-background";
 
 export default function Hero() {

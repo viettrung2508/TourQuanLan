@@ -6,11 +6,12 @@ export type TExperienceBlog = IExperienceBlogItem[];
 
 export interface IExperienceBlogItem {
   id: string;
-  overview: IOverviewExperienceBlog;
+  // overview: IOverviewExperienceBlog;
+  overview: any;
   detail: IDetailExperienceBlog;
 }
 
-export interface IOverviewExperienceBlog {}
+// export interface IOverviewExperienceBlog {}
 
 export interface IDetailExperienceBlog {
   heading: string[];

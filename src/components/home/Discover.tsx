@@ -1,5 +1,4 @@
 import { MdOutlineNavigateNext } from "react-icons/md";
-import Image from "next/image";
 import { Carousel } from "../ui/carousel";
 const slideData = [
   {
