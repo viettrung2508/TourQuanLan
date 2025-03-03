@@ -1,10 +1,15 @@
-import { LayoutGridDemo } from "@/components/people/LayoutGrid";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Tour() {
   return (
     <div className=" relative">
-      <img src="/bg.jpg" className="h-[700px] w-full object-cover" />
+      {/* <Image
+        alt=""
+        src="/bg.jpg"
+        width={1920}
+        height={1080}
+        className="h-[700px] w-full object-cover"
+      /> */}
       {/* <div className="absolute -top-2 flex flex-col items-center h-full justify-center w-full text-white font-bold  ">
         <h1 className="text-5xl">QUAN LẠN ECOTRIP</h1>
         <h2 className="uppercase text-4xl mt-4">

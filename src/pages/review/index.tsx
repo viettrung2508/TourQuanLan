@@ -1,4 +1,3 @@
-import { LayoutGridDemo } from "@/components/people/LayoutGrid";
 import Image from "next/image";
 
 const images = [
@@ -49,7 +48,7 @@ export default function Review() {
       <div className="columns-2 py-10 md:py-20 gap-4">
         {images.map((src, index) => (
           <div key={index}>
-            <img src={src} className="w-full h-96 pb-4 object-cover" />
+            <Image alt="" src={src} className="w-full h-96 pb-4 object-cover" />
           </div>
         ))}
       </div>
@@ -57,8 +56,14 @@ export default function Review() {
         <h2>Theo dõi chúng tôi</h2>
         <h1>QUAN LẠN ECOTRIP</h1>
         <div className="columns-2 w-2/3 mx-auto">
-          <img src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <img src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          <Image
+            alt=""
+            src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+          <Image
+            alt=""
+            src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
         </div>
         <h2>Đi tour cùng Quan Lạn Ecotrip</h2>
         <button>ĐẶt tour ngay</button>

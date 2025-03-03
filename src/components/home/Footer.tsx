@@ -1,29 +1,50 @@
-import { FaFacebookF, FaPhoneSquareAlt } from "react-icons/fa";
-import { ImFacebook } from "react-icons/im";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 import { IoGlobeOutline, IoLocationSharp, IoMail } from "react-icons/io5";
-import { MdMusicNote } from "react-icons/md";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" text-black font-thin pb-16">
+    <div className=" text-black font-thin py-8">
       <div className="grid grid-cols-10 mx-auto max-w-screen-2xl">
         <div className="col-span-2">
-          <img src="logo.png" className="w-40" />
-          <p className=" text-sm mb-4">
+          <Link href="/">
+            <div className="flex items-center w-[168px] gap-2">
+              <Image alt="logo" src="/logov.png" width={50} height={50} />
+              <div>
+                <p className="text-primary_green-bold font-semibold text-nowrap">
+                  QUAN LẠN
+                </p>
+                <p className="text-primary_green-bold font-thin text-nowrap">
+                  ECOTRIP
+                </p>
+              </div>
+            </div>
+          </Link>
+          <p className=" text-sm mb-4 mt-6">
             Chúng tôi luôn sẵn sàng giúp du khách khám phá Quan Lạn một cách
             trọn vẹn nhất
           </p>
           <h1 className="text-xl font-bold">Theo dõi chúng tôi</h1>
           <div className="flex space-x-4">
-            <img src="fb2.png" className="w-12" />
-            <img src="tiktok1.png" className="w-12" />
+            <Link href="https://www.facebook.com/supquanlan.travel">
+              <Image alt="" src="/fb2.png" width={40} height={40} />
+            </Link>
+            <Link href="https://www.tiktok.com/@quanlanecotrip">
+              <Image alt="" src="/tiktok1.png" width={40} height={40} />
+            </Link>
           </div>
         </div>
         <div className="col-span-4 mt-2">
           <div>
-            <h1 className=" text-2xl font-bold mb-4 ml-2">Liên hệ với chúng tôi</h1>
+            <h1 className=" text-2xl font-bold mb-4 ml-2">
+              Liên hệ với chúng tôi
+            </h1>
             <div className="flex mt-2 mb-4 items-center">
-              <IoLocationSharp size={20} className="text-primary_green-bold self-start mt-1"/>
+              <IoLocationSharp
+                size={20}
+                className="text-primary_green-bold self-start mt-1"
+              />
               <h2 className=" ml-2 text-lg">
                 Địa chỉ: Thôn Thái Hòa, xã Quan Lạn, Vân Đồn, Quảng Ninh
               </h2>
@@ -31,7 +52,7 @@ export default function Footer() {
           </div>
           <div>
             <div className="flex mt-4 items-center">
-              <FaPhoneSquareAlt size={18} className="text-primary_green-bold"/>
+              <FaPhoneSquareAlt size={18} className="text-primary_green-bold" />
               <h1 className="text-lg ml-2">Liên hệ hotline:</h1>
             </div>
             <div className="ml-7 text-lg">
@@ -41,7 +62,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex mt-4 items-center">
-            <IoMail size={18} className="text-primary_green-bold"/>
+            <IoMail size={18} className="text-primary_green-bold" />
             <h2 className="ml-2 text-lg">Email</h2>
           </div>
           <div className="flex items-center mt-4">
@@ -49,8 +70,6 @@ export default function Footer() {
             <h2 className="ml-2 text-lg">www.quanlanecotrip.com.vn</h2>
           </div>
         </div>
-
-       
 
         <div className="col-span-2">
           <div>
@@ -71,9 +90,9 @@ export default function Footer() {
           </div>
           <div className="space-y-2">
             <div className="flex space-x-2">
-              <img src="zalo.png" className="w-12" />
-              <img src="whatapp.png" className="w-12" />
-              <img src="mess.png" className="w-12" />
+              <Image alt="" src="/zalo.png" width={40} height={40} />
+              <Image alt="" src="/whatapp.png" width={40} height={40} />
+              <Image alt="" src="/mess.png" width={40} height={40} />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { LayoutGrid } from "../ui/layout-grid";
 
 export function LayoutGridDemo() {

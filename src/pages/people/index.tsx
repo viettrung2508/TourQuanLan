@@ -57,7 +57,11 @@ export default function People() {
       <div className="columns-1 sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4">
         {images.map((src, index) => (
           <div key={index} className="mb-4 break-inside-avoid">
-            <img src={src} className="w-full object-cover rounded-lg" />
+            <Image
+              alt=""
+              src={src}
+              className="w-full object-cover rounded-lg"
+            />
           </div>
         ))}
       </div>

@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { AnimatedNumber } from "../../../components/core/animated-number";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import { MorphingDialogBasicOne } from "./MorphingDialogBasicOne";
+import Image from "next/image";
 
 export default function OurServices() {
   const [value, setValue] = useState(0);
@@ -11,15 +10,11 @@ export default function OurServices() {
   }, []);
   return (
     <div className="relative">
-      <div className="">
-        <img
-          src="bg_discover.png"
-          className="  h-[1000px] w-full"
-        />
+      <div className="w-full h-[700px]">
+        <Image alt="" src="/bg_discover.png" layout="fill" objectFit="cover" />
       </div>
       <div className="absolute  max-w-screen-2xl mx-auto grid grid-cols-10 gap-10 top-20 left-32">
         <div className="col-span-5 flex flex-col">
-          {/* Nội dung phần bên trái */}
           <div>
             <h1 className="text-4xl font-bold text-[#134f46]">Khám phá</h1>
             <h1 className="text-7xl font-bold text-[#134f46]">Quan Lạn</h1>
@@ -70,8 +65,17 @@ export default function OurServices() {
             VỀ CHÚNG TÔI
           </button>
         </div>
-        <div className="col-span-5 text-center">
-          <img src="/about3.jpg" className="h-full" />
+        <div className="col-span-5 ">
+          <div className="">
+            <Image
+            className="rounded-3xl"
+              alt="Picture of the author"
+              src="/about3.jpg"
+              height={800}
+              width={700}
+              objectFit="cover"
+            />
+          </div>
         </div>
       </div>
     </div>

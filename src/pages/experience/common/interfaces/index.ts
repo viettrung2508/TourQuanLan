@@ -1,13 +1,13 @@
 export enum EKeyExperienceBlog {
-  blog_1 = 'blog_1'
+  blog_1 = "blog_1",
 }
 
-export type TExperienceBlog = IExperienceBlogItem[]
+export type TExperienceBlog = IExperienceBlogItem[];
 
 export interface IExperienceBlogItem {
   id: string;
-  overview: IOverviewExperienceBlog,
-  detail: IDetailExperienceBlog
+  overview: IOverviewExperienceBlog;
+  detail: IDetailExperienceBlog;
 }
 
 export interface IOverviewExperienceBlog {}
@@ -19,6 +19,6 @@ export interface IDetailExperienceBlog {
     content: {
       text?: string;
       image?: string;
-    }[]
-  }[]
+    }[];
+  }[];
 }
