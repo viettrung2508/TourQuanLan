@@ -1,11 +1,11 @@
 import RCheckbox from "@/components/form/RCheckbox";
-import { LIST_RANGE_DAY } from "../common/constants";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { SiStartrek } from "react-icons/si";
 import { FaRegClock } from "react-icons/fa";
 import Pagination from "@/components/pagination/Pagination";
 import { useState } from "react";
 import SliderView from "@/components/slider-view";
+import { LIST_RANGE_DAY } from "@/common/tour/constants";
 
 export default function ListTour() {
   const [page, setPage] = useState<number>(1)

@@ -1,4 +1,4 @@
-import { TExperienceBlog } from "../interfaces";
+import { TExperienceBlog } from "./interface";
 
 export const EXPERIENCE_BLOG: TExperienceBlog =[
   {

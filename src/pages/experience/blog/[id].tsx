@@ -1,8 +1,5 @@
-import { EXPERIENCE_BLOG } from "../common/constants";
-import {
-  EKeyExperienceBlog,
-  IDetailExperienceBlog,
-} from "../common/interfaces";
+import { IDetailExperienceBlog } from "@/common/experience/interface";
+import { EXPERIENCE_BLOG } from "../../../common/experience/constants";
 import SliderView from "@/components/slider-view";
 
 export default function BlogExperience({

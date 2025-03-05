@@ -10,7 +10,7 @@ export default function Pagination({
 }: {
   page: number;
   total: number;
-  onSetPage: Function;
+  onSetPage: (page: number) => void;
   className?: React.ComponentProps<"div">["className"];
 }) {
   if (!total) {
