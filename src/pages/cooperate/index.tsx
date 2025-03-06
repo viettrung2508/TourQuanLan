@@ -1,4 +1,3 @@
-import { ImagesSliderDemo } from "@/components/cooperate/ImagesSliderDemo";
 import Partner from "@/components/cooperate/Partner";
 import Image from "next/image";
 
@@ -87,7 +86,6 @@ export default function Cooperate() {
         />{" "}
       </div> */}
       </div>
-      <ImagesSliderDemo />
       <Partner />
     </div>
   );

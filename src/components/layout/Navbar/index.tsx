@@ -14,11 +14,11 @@ const header = [
   },
   {
     title: "DỊCH VỤ LƯU TRÚ",
-    link: "/registration",
+    link: "/",
   },
   {
     title: "TRẢI NGHIỆM THỰC TẾ",
-    link: "/get-involved",
+    link: "/ticket",
   },
   {
     title: "DỊCH VỤ KHÁC",

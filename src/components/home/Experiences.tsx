@@ -1,240 +1,47 @@
-// import Image from "next/image";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
-
-// export default function Experiences() {
-//   return (
-//     <div className="bg-[#D6DFDD] ">
-//       <div className="mx-auto max-w-screen-2xl">
-//         {/* <div className="absolute">
-//           <Image
-//             src="/timeline.png"
-//             layout="fill"
-//             alt="Picture of the author"
-//             className="object-cover"
-//           />
-//         </div> */}
-//         <div>Kinh nghiệm du lịch Quan Lạn</div>
-//         <div className="flex justify-center  py-10">
-//           <Swiper
-//             modules={[Navigation, Pagination, Scrollbar, A11y]}
-//             spaceBetween={50}
-//             slidesPerView={3}
-//             navigation={true}
-//             loop={true}
-//           >
-//             <SwiperSlide>
-//               <div>
-//                 <div className="rounded-2xl overflow-hidden w-96 h-72">
-//                   {" "}
-//                   <Image
-//                     src="/test.jpg"
-//                     width={600} // Đặt kích thước mong muốn
-//                     height={300}
-//                     alt="Picture of the author"
-//                     className="object-cover" // Đảm bảo ảnh giữ tỷ lệ
-//                   />
-//                 </div>
-//                 <div>
-//                   <h1>Du lịch quan lạn</h1>
-//                   <p>
-//                     Không chỉ là đơn vị tổ chức tour uy tín và lớn nhất Quan
-//                     Lạn. Chúng tôi còn là top những công ty bán phòng khách sạn
-//                     lớn nhất tại Quan Lạn. Là đối tác của hơn 20 khách sạn từ 3
-//                     sao đến 5 sao tại Quan Lạn.{" "}
-//                   </p>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//             <SwiperSlide>
-//               <div>
-//                 <div className="rounded-2xl overflow-hidden w-96 h-72">
-//                   {" "}
-//                   {/* Giới hạn kích thước của container */}
-//                   <Image
-//                     src="/test.jpg"
-//                     width={400} // Đặt kích thước mong muốn
-//                     height={300}
-//                     alt="Picture of the author"
-//                     className="object-cover" // Đảm bảo ảnh giữ tỷ lệ
-//                   />
-//                 </div>
-//                 <div>
-//                   <h1>Du lịch quan lạn</h1>
-//                   <p>
-//                     Không chỉ là đơn vị tổ chức tour uy tín và lớn nhất Quan
-//                     Lạn. Chúng tôi còn là top những công ty bán phòng khách sạn
-//                     lớn nhất tại Quan Lạn. Là đối tác của hơn 20 khách sạn từ 3
-//                     sao đến 5 sao tại Quan Lạn.{" "}
-//                   </p>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//             <SwiperSlide>
-//               <div>
-//                 <div className="rounded-2xl overflow-hidden w-96 h-72">
-//                   {" "}
-//                   {/* Giới hạn kích thước của container */}
-//                   <Image
-//                     src="/test.jpg"
-//                     width={400} // Đặt kích thước mong muốn
-//                     height={300}
-//                     alt="Picture of the author"
-//                     className="object-cover" // Đảm bảo ảnh giữ tỷ lệ
-//                   />
-//                 </div>
-//                 <div>
-//                   <h1>Du lịch quan lạn</h1>
-//                   <p>
-//                     Không chỉ là đơn vị tổ chức tour uy tín và lớn nhất Quan
-//                     Lạn. Chúng tôi còn là top những công ty bán phòng khách sạn
-//                     lớn nhất tại Quan Lạn. Là đối tác của hơn 20 khách sạn từ 3
-//                     sao đến 5 sao tại Quan Lạn.{" "}
-//                   </p>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//             <SwiperSlide>
-//               <div>
-//                 <div className="rounded-2xl overflow-hidden w-96 h-72">
-//                   {" "}
-//                   {/* Giới hạn kích thước của container */}
-//                   <Image
-//                     src="/test.jpg"
-//                     width={400} // Đặt kích thước mong muốn
-//                     height={300}
-//                     alt="Picture of the author"
-//                     className="object-cover" // Đảm bảo ảnh giữ tỷ lệ
-//                   />
-//                 </div>
-//                 <div>
-//                   <h1>Du lịch quan lạn</h1>
-//                   <p>
-//                     Không chỉ là đơn vị tổ chức tour uy tín và lớn nhất Quan
-//                     Lạn. Chúng tôi còn là top những công ty bán phòng khách sạn
-//                     lớn nhất tại Quan Lạn. Là đối tác của hơn 20 khách sạn từ 3
-//                     sao đến 5 sao tại Quan Lạn.{" "}
-//                   </p>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//             <SwiperSlide>
-//               <div>
-//                 <div className="rounded-2xl overflow-hidden w-96 h-72">
-//                   {" "}
-//                   {/* Giới hạn kích thước của container */}
-//                   <Image
-//                     src="/test.jpg"
-//                     width={400} // Đặt kích thước mong muốn
-//                     height={300}
-//                     alt="Picture of the author"
-//                     className="object-cover" // Đảm bảo ảnh giữ tỷ lệ
-//                   />
-//                 </div>
-//                 <div>
-//                   <h1>Du lịch quan lạn</h1>
-//                   <p>
-//                     Không chỉ là đơn vị tổ chức tour uy tín và lớn nhất Quan
-//                     Lạn. Chúng tôi còn là top những công ty bán phòng khách sạn
-//                     lớn nhất tại Quan Lạn. Là đối tác của hơn 20 khách sạn từ 3
-//                     sao đến 5 sao tại Quan Lạn.{" "}
-//                   </p>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//           </Swiper>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 "use client";
 import React from "react";
 import Image from "next/image";
-
 import { motion } from "motion/react";
-import { ColourfulText } from "../ui/colourful-text";
-import { Card, Carousel } from "../ui/apple-cards-carousel";
+import { AnimatedTestimonials } from "../ui/animated-testimonials";
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
-
-const data = [
+const testimonials = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    quote:
+      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+    name: "Sarah Chen",
+    designation: "Product Manager at TechFlow",
+    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    quote:
+      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+    name: "Michael Rodriguez",
+    designation: "CTO at InnovateSphere",
+    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
-
-  {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    quote:
+      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+    name: "Emily Watson",
+    designation: "Operations Director at CloudScale",
+    src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    quote:
+      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+    name: "James Kim",
+    designation: "Engineering Lead at DataPro",
+    src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    quote:
+      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+    name: "Lisa Thompson",
+    designation: "VP of Technology at FutureNet",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 export function Experiences() {
-  const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
-  ));
   return (
     <div className="h-screen w-full flex justify-center relative overflow-hidden bg-black">
       <motion.img
@@ -244,12 +51,12 @@ export function Experiences() {
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1 }}
       />
-      
-      <div className="w-full h-full py-20">
-        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        <ColourfulText text="Trải nghiệm " /> tuyệt vời
+
+      <div className="w-full h-full py-20 flex items-center justify-center flex-col">
+        <h2 className="max-w-7xl mb-24 mt-16 pl-4 mx-auto text-xl md:text-6xl text-center font-bold text-white dark:text-neutral-200 font-sans">
+          Trải nghiệm tuyệt vời
         </h2>
-        <Carousel items={cards} />
+        <AnimatedTestimonials testimonials={testimonials} />
       </div>
     </div>
   );
