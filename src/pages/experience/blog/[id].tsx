@@ -29,7 +29,7 @@ export default function BlogExperience({
                   <p className="whitespace-pre-line">{content?.text}</p>
                   {!!content?.image && (
                     <img
-                      className="w-full h-auto object-cover mb-4"
+                      className="w-full px-12 py-4 h-auto object-cover mb-4"
                       src={content.image}
                       alt="ảnh Quan Lạn"
                     />
