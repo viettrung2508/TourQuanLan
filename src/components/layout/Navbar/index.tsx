@@ -7,9 +7,8 @@ import { Menu, X } from "lucide-react";
 const header = [
   { title: "VỀ CHÚNG TÔI", link: "/about" },
   { title: "TOUR QUAN LẠN", link: "/tour/list-tour" },
-  { title: "DỊCH VỤ LƯU TRÚ", link: "/" },
+  // { title: "DỊCH VỤ LƯU TRÚ", link: "/" },
   { title: "TRẢI NGHIỆM THỰC TẾ", link: "/ticket" },
-  { title: "DỊCH VỤ KHÁC", link: "/advisors" },
   { title: "KINH NGHIỆM DU LỊCH", link: "/experience" },
 ];
 
@@ -28,7 +27,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md p-4 transition-all duration-300 ${
+      className={` top-0 left-0 right-0 z-50 bg-white shadow-md p-4 transition-all duration-300 ${
         isOpacity ? "bg-opacity-90" : "bg-opacity-100"
       }`}
     >
@@ -49,7 +48,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-20">
           {header.map((item) => (
             <Link key={item.title} href={item.link}>
               <div

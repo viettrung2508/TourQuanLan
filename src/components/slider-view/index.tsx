@@ -46,7 +46,10 @@ export default function SliderView() {
                     className="object-cover h-60 sm:h-72 md:h-80 w-full rounded-t-2xl transition-all duration-300"
                   />
                   <div className="p-3 flex flex-col w-full">
-                    <ChipTag label="Kinh nghiệm du lịch" Icon={FaLocationArrow} />
+                    <ChipTag
+                      label="Kinh nghiệm du lịch"
+                      Icon={FaLocationArrow}
+                    />
                     <p className="line-clamp-1 mt-2 font-bold pr-10">
                       Khám phá đảo Quan Lạn với các địa điểm tham quan nổi tiếng
                     </p>
