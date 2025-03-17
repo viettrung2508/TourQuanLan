@@ -1,140 +1,78 @@
-import Image from "next/image";
-import React from "react";
-import { Timeline } from "@/components/ui/timeline";
+"use client";
 
-export function TimelineDemo() {
-  const data = [
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import {
+  Phone,
+  ArrowRight,
+  LightbulbIcon,
+  DollarSign,
+  Users,
+} from "lucide-react";
+
+export default function Timeline() {
+  const steps = [
     {
-      title: "01",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-5xl font-normal mb-8">
-            Liên hệ và cung cấp chi tiết chuyến đi{" "}
-          </p>
-        </div>
-      ),
+      number: "01",
+      status: "Liên hệ và cung cấp chi tiết chuyến đi",
+      icon: <Phone className="w-10 h-10 text-green-500" />,
     },
     {
-      title: "02",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-5xl font-normal mb-8">
-            Chia sẻ yêu cầu đặt tours của bạn
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-        </div>
-      ),
+      number: "02",
+      status: "Chia sẻ yêu cầu đặt tours của bạn",
+      icon: <ArrowRight className="w-10 h-10 text-green-500" />,
     },
     {
-      title: "03",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-5xl font-normal mb-4">
-            Đề xuất tours phù hợp cho bạn{" "}
-          </p>
-          {/* <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div> */}
-          {/* <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div> */}
-        </div>
-      ),
+      number: "03",
+      status: "Đề xuất tours phù hợp cho bạn",
+      icon: <LightbulbIcon className="w-10 h-10 text-green-500" />,
     },
     {
-      title: "04",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-5xl font-normal mb-4">
-            Đề xuất tours phù hợp cho bạn{" "}
-          </p>
-        </div>
-      ),
+      number: "04",
+      status: "Xác nhận tours, ký hợp đồng và thanh toán",
+      icon: <DollarSign className="w-10 h-10 text-green-500" />,
     },
     {
-      title: "05",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-5xl font-normal mb-4">
-            Đề xuất tours phù hợp cho bạn{" "}
-          </p>
-        </div>
-      ),
+      number: "05",
+      status: "Tận hưởng chuyến đi của bạn",
+      icon: <Users className="w-10 h-10 text-green-500" />,
     },
   ];
+
   return (
-    <div className="w-full">
-      <Timeline data={data} />
-    </div>
+    <section className="max-w-screen-2xl mx-auto py-20">
+      <h1 className="text-6xl mb-10 text-[#138140]">Quy trình đặt tour tại Quan Lạn Ecotrip</h1>
+      <div className="w-[95%] mx-auto overflow-hidden">
+        <Swiper
+          slidesPerView={5}
+          spaceBetween={16}
+          freeMode={true}
+          className="flex"
+        >
+          {steps.map((step, index) => (
+            <SwiperSlide
+              key={index}
+              className="w-auto flex-shrink-0 text-center"
+            >
+              <div className="flex flex-col items-center">
+                <div className="text-6xl font-semibold text-[#138140]">
+                  {step.number}
+                </div>
+                <div className="relative w-full mt-2 border-t-2 border-[#ffe49e] flex justify-center">
+                  <span className="absolute -top-2 w-3 h-3 bg-[#138140] border-2 border-[#138140] rounded-full"></span>
+                </div>
+                <div className="p-4 mt-6 bg-gray-200 rounded-full">
+                  {step.icon}
+                </div>
+                <div className="text-2xl  text-[#138140] mt-2">
+                  {step.status}
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 }

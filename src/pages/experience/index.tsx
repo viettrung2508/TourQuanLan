@@ -9,7 +9,7 @@ export default function Experience() {
   const [page, setPage] = useState<number>(1);
   return (
     <div className="w-full">
-      <div className="bg-[url('/bg.jpg')] h-[700px] w-full object-cover bg-cover flex items-center justify-center flex-col gap-10">
+      <div className="bg-[url('/bg.jpg')] h-[700px] w-full object-cover bg-cover flex items-center justify-center flex-col gap-4">
         <p className="text-7xl text-white font-extrabold">QUAN LẠN ECOTRIP</p>
         <p className="text-4xl text-white font-semibold">KINH NGHIỆM DU LỊCH</p>
       </div>

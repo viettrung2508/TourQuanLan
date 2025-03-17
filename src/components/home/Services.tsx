@@ -1,34 +1,24 @@
-import Image from "next/image";
-
-export default function Services() {
+export function Services() {
   return (
-    <div className="max-w-screen-2xl mx-auto">
-      <div className=" my-4 flex justify-between">
-        <div className=" flex items-center gap-4">
-          <div className="relative w-36 h-32">
-            <Image alt="" src="/1.png" layout="fill" objectFit="cover" />
+    <div className="max-w-screen-2xl mx-auto px-4">
+      <div className="my-4 flex flex-col lg:flex-row items-center text-center lg:text-left justify-between gap-6 lg:gap-4">
+        <div className="flex flex-col lg:flex-row items-center gap-4">
+          <div className="w-24 h-16 lg:w-36 lg:h-32">
+            <img alt="" src="/1.png" className="object-contain w-full h-full" />
           </div>
-          <h1 className="text-3xl">
-            Hoàn hủy
-            <br /> linh hoạt
-          </h1>
+          <h1 className="text-lg lg:text-3xl">Hoàn hủy linh hoạt</h1>
         </div>
-        <div className=" flex items-center gap-4">
-          <div className="relative w-36 h-32">
-            <Image alt="" src="/2.png" layout="fill" objectFit="cover" />
+        <div className="flex flex-col lg:flex-row items-center gap-4">
+          <div className="w-24 h-16 lg:w-36 lg:h-32">
+            <img alt="" src="/2.png" className="object-contain w-full h-full" />
           </div>
-          <h1 className="text-3xl">
-            Dịch vụ <br /> xuất sắc
-          </h1>
+          <h1 className="text-lg lg:text-3xl">Dịch vụ xuất sắc</h1>
         </div>
-        <div className=" flex items-center gap-4">
-          <div className="relative w-44 h-32">
-            <Image alt="" src="/3.png" layout="fill" objectFit="cover" />
+        <div className="flex flex-col lg:flex-row items-center gap-4">
+          <div className="w-24 h-16 lg:w-44 lg:h-32">
+            <img alt="" src="/3.png" className="object-contain w-full h-full" />
           </div>
-          <h1 className="text-3xl">
-            Trải nghiệm <br />
-            tuyệt vời{" "}
-          </h1>
+          <h1 className="text-lg lg:text-3xl">Trải nghiệm tuyệt vời</h1>
         </div>
       </div>
     </div>
