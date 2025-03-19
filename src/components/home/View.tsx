@@ -19,7 +19,7 @@ export default function View() {
               <img
                 alt=""
                 src="/about1.jpg"
-                className="rounded-xl w-full  h-auto"
+                className="rounded-xl w-full  md:h-[420px]"
               />
               <div className="absolute bottom-0 left-0  text-white p-4 ">
                 <h1 className="text-sm">

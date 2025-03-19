@@ -12,10 +12,10 @@ export default function TicketPage() {
   return (
     <div className="w-full">
       <div className="bg-[url('/bg.jpg')] h-[700px] md:h-[500px] sm:h-[350px] w-full bg-cover flex flex-col items-center justify-center gap-6 text-center px-4">
-        <p className="text-6xl md:text-4xl sm:text-2xl text-white font-extrabold">
+        <p className="text-4xl md:text-6xl sm:text-2xl text-white font-extrabold">
           QUAN LẠN ECOTRIP
         </p>
-        <p className="text-3xl md:text-xl sm:text-lg text-white font-semibold">
+        <p className="text-xl md:text-3xl sm:text-lg text-white font-semibold">
           TRẢI NGHIỆM THỰC TẾ
         </p>
       </div>
@@ -60,13 +60,7 @@ export default function TicketPage() {
                       key={index}
                       className="rounded-lg overflow-hidden shadow-md bg-white flex flex-col"
                     >
-                      <Image
-                        alt=""
-                        src="/test.jpg"
-                        width={500}
-                        height={300}
-                        className="w-full object-cover"
-                      />
+                      <img src="test.jpg" className="w-full h-96 rounded-t-lg object-cover"/>
                       <div className="p-4 flex-1 flex flex-col justify-between">
                         <div>
                           <p className="text-primary_green text-lg font-bold line-clamp-2">
