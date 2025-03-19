@@ -53,7 +53,7 @@ export function Experiences() {
       />
 
       <div className="w-full h-full py-20 flex items-center justify-center flex-col">
-        <h2 className="max-w-7xl mb-24 mt-16 pl-4 mx-auto text-xl md:text-6xl text-center font-bold text-white dark:text-neutral-200 font-sans">
+        <h2 className="max-w-7xl lg:mb-24 mt-16 pl-4 mx-auto text-4xl md:text-6xl text-center font-bold text-white dark:text-neutral-200 font-sans">
           Trải nghiệm tuyệt vời
         </h2>
         <AnimatedTestimonials testimonials={testimonials} />

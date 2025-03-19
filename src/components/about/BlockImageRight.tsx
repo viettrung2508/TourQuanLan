@@ -8,7 +8,7 @@ export default function BlockImageRight() {
               <div className="text-4xl text-[#138140] mb-10  font-bold border  py-4 text-center rounded-full bg-[#ffe49e]">
                 CAM KẾT CHẤT LƯỢNG
               </div>
-              <p className="text-white text-6xl">
+              <p className="text-white text-5xl">
                 Trải nghiệm, sự hài lòng của khách hàng là điều quan trọng tiên
                 quyết
               </p>

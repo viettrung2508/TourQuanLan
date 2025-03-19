@@ -10,10 +10,6 @@ export default function View() {
           <h1 className="text-[#ffe49e] text-5xl md:text-6xl lg:text-7xl font-bold pb-8">
             Danh sách tour <br /> khám phá <br /> đảo Quan Lạn
           </h1>
-          <button className="flex items-center justify-center md:justify-start bg-[#138140] w-52 lg:w-60 py-2 text-white rounded-3xl px-4">
-            <MdOutlineNavigateNext className="border-2 rounded-full text-black size-7 bg-white border-white  mr-4" />
-            VỀ CHÚNG TÔI
-          </button>
         </div>
 
         {/* Right Section - Tour List */}
