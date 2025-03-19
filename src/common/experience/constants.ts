@@ -1,9 +1,29 @@
-import { TExperienceBlog } from "./interface";
+import { TExperienceBlog, TExperienceTags } from "./interface";
+
+export const EXPERIENCE_TAGS: TExperienceTags = [
+  {
+    id: '1',
+    name: 'Địa danh'
+  },
+  {
+    id: '2',
+    name: 'Kinh nghiệm du lịch'
+  },
+  {
+    id: '3',
+    name: 'Tin tức'
+  }
+]
 
 export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "1",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Quan Lạn',
+      image: '/experience/quan-lan-detail-1.jpg',
+      description: "Bãi Biển Quan Lạn – Thiên Đường Hoang Sơ Giữa Lòng Quảng Ninh",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Quan Lạn"],
       body: [
@@ -56,7 +76,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "2",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Minh Châu',
+      image: "/dji.jpg",
+      description: "Bãi Biển Minh Châu – Viên Ngọc Sáng Giữa Lòng Đảo Quan Lạn",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Minh Châu"],
       body: [
@@ -100,7 +125,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "3",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi tắm tiên',
+      image: "/baitamtien.jpg",
+      description: "Bãi Tắm Tiên – Nét Hoang Sơ Bí Ẩn Giữa Đảo Quan Lạn",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi tắm tiên"],
       body: [
@@ -149,7 +179,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "4",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Ngọc',
+      image: "/bienngoc.jpg",
+      description: "Bãi Biển Ngọc – Nơi Thiên Nhiên Hòa Quyện Với Sự Tinh Khiết Tại Đảo Quan Lạn",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Ngọc"],
       body: [
@@ -201,7 +236,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "5",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi rùa',
+      image: "/bairua.jpg",
+      description: "Bãi Rùa – Góc Bình Yên Hoang Sơ Trên Đảo Quan Lạn",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi rùa"],
       body: [
@@ -244,7 +284,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "6",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi Robinson',
+      image: "/robinson.jpg",
+      description: "Vẻ đẹp tự nhiên của bãi biển Robinson",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi Robinson"],
       body: [
@@ -281,7 +326,12 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   },
   {
     id: "7",
-    overview: {},
+    overview: {
+      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi đá tình yêu',
+      image: "/baidatinhyeu.jpg",
+      description: "Bãi Đá Tình Yêu ở Đảo Quan Lạn: Điểm đến lãng mạn giữa thiên nhiên hoang sơ",
+      tagIds: [EXPERIENCE_TAGS[0]]
+    },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi đá tình yêu"],
       body: [
