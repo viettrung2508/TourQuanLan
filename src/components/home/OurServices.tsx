@@ -1,6 +1,7 @@
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { AnimatedNumber } from "../../../components/core/animated-number";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function OurServices() {
   const [value, setValue] = useState(0);
@@ -9,7 +10,7 @@ export default function OurServices() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mt-20">
       <div className="relative z-10">
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:top-20 lg:left-32">
@@ -58,10 +59,13 @@ export default function OurServices() {
                   <h1 className="text-lg">Với tất cả các tour</h1>
                 </div>
               </div>
-              <button className="flex items-center justify-center lg:justify-start bg-[#134f46] w-60 py-2 text-white rounded-3xl pl-2 mt-8">
-                <MdOutlineNavigateNext className="border-2 rounded-full text-black size-7 bg-white border-white mr-4" />
-                VỀ CHÚNG TÔI
-              </button>
+              <Link href="/about">
+                {" "}
+                <button className="mt-10 flex justify-start bg-[#138140] w-52 py-2 text-white rounded-3xl pl-2">
+                  <MdOutlineNavigateNext className="border-2 rounded-full text-black size-6 bg-white border-white mr-6" />
+                  VỀ CHÚNG TÔI
+                </button>
+              </Link>
             </div>
 
             {/* Right Section - Image */}
@@ -77,7 +81,10 @@ export default function OurServices() {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 bg-cover bg-center -z-10 h-[1000] object-cover" style={{ backgroundImage: `url('/bg_discover.png')` }}></div>
+      <div
+        className="absolute inset-0 bg-cover bg-center -z-10 h-[1000] object-cover"
+        style={{ backgroundImage: `url('/bg_discover.png')` }}
+      ></div>
     </div>
   );
 }

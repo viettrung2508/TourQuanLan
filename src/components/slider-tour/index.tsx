@@ -12,35 +12,35 @@ export default function SliderTour() {
   return (
     <div className="px-4 md:px-8 lg:px-16 py-10">
       {/* Tiêu đề */}
-
-      <div className="text-3xl text-primary_green font-bold">
+      <div className="text-3xl text-primary_green font-bold text-center">
         Danh sách tour khám phá đảo Quan Lạn
       </div>
 
       {/* Slider */}
-      <div className="flex justify-center mt-5">
+      <div className="relative mt-5">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={20} // Giảm khoảng cách khi màn hình nhỏ
-          slidesPerView={1} // Mặc định là 1 slide cho mobile
+          spaceBetween={15} // Khoảng cách nhỏ hơn trên mobile
+          slidesPerView={1} // Mặc định trên mobile
           navigation={true}
           loop={true}
+          className="overflow-visible"
           breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 }, // Mobile nhỏ
-            768: { slidesPerView: 2, spaceBetween: 30 }, // Tablet
-            1024: { slidesPerView: 3, spaceBetween: 40 }, // Desktop trung bình
-            1280: { slidesPerView: 4, spaceBetween: 50 }, // Desktop lớn
+            640: { slidesPerView: 1, spaceBetween: 15 }, // Mobile nhỏ
+            768: { slidesPerView: 2, spaceBetween: 20 }, // Tablet
+            1024: { slidesPerView: 3, spaceBetween: 30 }, // Laptop
+            1280: { slidesPerView: 4, spaceBetween: 40 }, // Desktop
           }}
         >
           {Array(7)
             .fill(0)
             .map((_, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="pb-5">
                 <div className="bg-white rounded-t-2xl w-full shadow-lg transition-transform hover:scale-105">
                   <img
                     src="/test.jpg"
-                    alt="Picture of the author"
-                    className="object-cover h-60 sm:h-72 md:h-80 w-full rounded-t-2xl transition-all duration-300"
+                    alt="Tour Image"
+                    className="object-cover h-44 md:h-52 lg:h-60 xl:h-72 w-full rounded-t-2xl transition-all duration-300"
                   />
                   <div className="p-3 flex flex-col w-full">
                     <ChipTag
@@ -48,10 +48,10 @@ export default function SliderTour() {
                       Icon={FaLocationArrow}
                     />
                     <p className="line-clamp-1 mt-2 font-bold pr-10">
-                      Tour 2 ngày 1 đêm: hà nội - ao tiên - quan lạn - tham quan
-                      các địa điểm nổi bật...{" "}
+                      Tour 2 ngày 1 đêm: Hà Nội - Ao Tiên - Quan Lạn - Tham quan
+                      các địa điểm nổi bật...
                     </p>
-                    <div className="mt-8 flex gap-1 self-end items-center cursor-pointer">
+                    <div className="mt-2 flex gap-1 self-end items-center cursor-pointer">
                       <span className="text-label">CHI TIẾT</span>
                       <MdKeyboardArrowRight className="text-label" />
                     </div>

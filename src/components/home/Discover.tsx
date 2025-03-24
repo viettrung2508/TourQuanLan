@@ -1,5 +1,6 @@
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { Carousel } from "../ui/carousel";
+import Link from "next/link";
 const slideData = [
   {
     title: "Bãi Robinson",
@@ -52,10 +53,13 @@ export default function Discover() {
           viên chuyên nghiệp, hướng dẫn viên nhiều năm kinh nghiệm, chia sẻ kiến
           thức và chăm sóc khách hàng tận tâm.
         </p>
-        <button className="mx-2 flex justify-start bg-[#138140] w-52 py-2 text-white rounded-3xl pl-2">
-          <MdOutlineNavigateNext className="border-2 rounded-full text-black size-6 bg-white border-white mr-6" />
-          VỀ CHÚNG TÔI
-        </button>
+        <Link href="/about">
+          {" "}
+          <button className="mx-2 flex justify-start bg-[#138140] w-52 py-2 text-white rounded-3xl pl-2">
+            <MdOutlineNavigateNext className="border-2 rounded-full text-black size-6 bg-white border-white mr-6" />
+            VỀ CHÚNG TÔI
+          </button>
+        </Link>
         <div className="relative overflow-hidden max-w-screen-2xl h-full py-20">
           <Carousel slides={slideData} />
         </div>

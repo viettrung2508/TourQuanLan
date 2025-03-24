@@ -9,7 +9,6 @@ export interface IExperienceTagItem {
   name: string;
 }
 
-
 export type TExperienceBlog = IExperienceBlogItem[];
 
 export interface IExperienceBlogItem {
@@ -35,3 +34,4 @@ export interface IDetailExperienceBlog {
     }[];
   }[];
 }
+
