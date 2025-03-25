@@ -1,12 +1,9 @@
 import { IDetailTourBlog } from "@/common/tour/interface";
 import { EXPERIENCE_BLOG } from "../../../common/experience/constants";
 import SliderView from "@/components/slider-view";
+import { Tour_BLOG } from "@/common/tour/constants";
 
-export default function BlogTour({
-  blog,
-}: {
-  blog?: IDetailTourBlog;
-}) {
+export default function BlogTour({ blog }: { blog?: IDetailTourBlog }) {
   return (
     <div className="w-full bg-primary_bg py-36 flex justify-center">
       <div className="w-full max-w-screen-xl">
@@ -49,7 +46,7 @@ export default function BlogTour({
 
 export async function getStaticPaths() {
   // Get the paths we want to pre-render based on posts
-  const paths = EXPERIENCE_BLOG.map((item) => ({
+  const paths = Tour_BLOG.map((item) => ({
     params: { id: item.id },
   }));
 
@@ -61,7 +58,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: { params: { id: string } }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const blog = EXPERIENCE_BLOG.find((item) => item.id === params.id);
+  const blog = Tour_BLOG.find((item) => item.id === params.id);
 
   // Pass post data to the page via props
   return { props: { blog: !!blog ? blog.detail : null } };

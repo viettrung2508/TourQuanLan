@@ -11,7 +11,7 @@ export default function BlockImageRight() {
               <div className="text-2xl sm:text-3xl md:text-4xl text-[#138140] mb-6 font-bold border py-4 text-center rounded-full bg-[#ffe49e]">
                 CAM KẾT CHẤT LƯỢNG
               </div>
-              <p className="text-white text-2xl sm:text-3xl md:text-4xl leading-snug">
+              <p className="text-white text-xl sm:text-2xl md:text-3xl leading-snug">
                 Trải nghiệm, sự hài lòng của khách hàng là điều quan trọng tiên
                 quyết
               </p>
@@ -28,18 +28,6 @@ export default function BlockImageRight() {
           </div>
 
           {/* Bottom Paragraph */}
-          <div className="mt-10">
-            <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed">
-              Trải nghiệm và sự hài lòng của khách hàng là ưu tiên hàng đầu mà
-              chúng tôi luôn hướng tới. Từng chi tiết trong dịch vụ đều được
-              thiết kế để mang đến cảm giác thoải mái, thú vị và đáng nhớ. Chúng
-              tôi tin rằng, khi khách hàng thực sự hài lòng, không chỉ họ sẽ
-              quay lại, mà còn là sợi dây kết nối văn hóa, trải nghiệm và giá
-              trị của chúng tôi đến gần hơn với cộng đồng. Sự quan tâm tận tâm
-              và chất lượng dịch vụ đồng đều là cam kết của chúng tôi để mang
-              lại sự hài lòng tối đa cho mỗi khách hàng.
-            </p>
-          </div>
         </div>
       </div>
     </div>

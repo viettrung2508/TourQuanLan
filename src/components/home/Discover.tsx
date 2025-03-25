@@ -48,10 +48,16 @@ export default function Discover() {
           <br /> vẻ đẹp Quan Lạn
         </h1>
         <p className=" py-4 mx-2">
-          Quan Lạn Ecotrip - Chúng tôi tự hào là công ty du lịch chuyên cung cấp
-          những chuyến du lịch độc đáo, những hành trình đặc sắc. Đội ngũ tư vấn
-          viên chuyên nghiệp, hướng dẫn viên nhiều năm kinh nghiệm, chia sẻ kiến
-          thức và chăm sóc khách hàng tận tâm.
+          Quan Lạn Ecotrip – Chúng tôi tự hào là đơn vị lữ hành chuyên cung cấp
+          những chuyến du lịch độc đáo và những hành trình trải nghiệm đặc sắc
+          tại Quan Lạn và các điểm đến thiên nhiên hoang sơ. Với đội ngũ tư vấn
+          viên chuyên nghiệp, tận tâm cùng các hướng dẫn viên giàu kinh nghiệm,
+          chúng tôi cam kết mang đến cho du khách những chuyến đi trọn vẹn,
+          không chỉ khám phá cảnh đẹp mà còn hiểu thêm về văn hóa, con người và
+          ẩm thực địa phương. Quan Lạn Ecotrip không ngừng đổi mới, sáng tạo để
+          mang đến các tour du lịch an toàn, chất lượng, giúp du khách tận hưởng
+          thiên nhiên một cách bền vững và ý nghĩa nhất. Hãy đồng hành cùng
+          chúng tôi để có những trải nghiệm khó quên!
         </p>
         <Link href="/about">
           {" "}

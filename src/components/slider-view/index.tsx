@@ -43,7 +43,7 @@ export default function SliderView() {
                   <img
                     src="/test.jpg"
                     alt="Picture of the author"
-                    className="object-cover h-60 sm:h-72 md:h-80 w-full rounded-t-2xl transition-all duration-300"
+                    className="object-cover h-60 sm:h-72 md:h-60 w-full rounded-t-2xl transition-all duration-300"
                   />
                   <div className="p-3 flex flex-col w-full">
                     <ChipTag

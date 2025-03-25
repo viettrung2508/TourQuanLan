@@ -44,7 +44,7 @@ export default function Timeline() {
 
   return (
     <div className="bg-primary_bg">
-      <section className="max-w-screen-2xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <section className="max-w-screen-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-[#134f46] text-center">
           Quy trình đặt tour tại Quan Lạn Ecotrip
         </h1>

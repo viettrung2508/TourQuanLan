@@ -3,13 +3,32 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { SiStartrek } from "react-icons/si";
 import { FaRegClock } from "react-icons/fa";
 import Pagination from "@/components/pagination/Pagination";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SliderView from "@/components/slider-view";
-import { LIST_RANGE_DAY } from "@/common/tour/constants";
+import { LIST_RANGE_DAY, Tour_BLOG } from "@/common/tour/constants";
+import { TTourBlog } from "@/common/tour/interface";
+import Link from "next/link";
 
 export default function ListTour() {
+  const countBlogInPage = 6;
   const [page, setPage] = useState<number>(1);
+  const [listBlog, setListBlog] = useState<TTourBlog>(Tour_BLOG.slice(0, 6));
+  const listBlogRef = useRef<HTMLDivElement>(null);
+  // const firstBlog = listBlog?.[0];
+  // const secondBlog = listBlog?.[1];
+  // const thirdBlog = listBlog?.[2];
 
+  const onChangePage = (newPage: number) => {
+    if (listBlogRef?.current) {
+      listBlogRef.current.scrollIntoView();
+    }
+    const newListBlog = Tour_BLOG.slice(
+      (newPage - 1) * countBlogInPage,
+      newPage * countBlogInPage
+    );
+    setListBlog(newListBlog);
+    setPage(newPage);
+  };
   return (
     <div className="w-full">
       {/* Background Header */}
@@ -40,7 +59,7 @@ export default function ListTour() {
                     ))}
                   </div>
                 </div>
-                <div className="flex items-center gap-2 rounded-3xl bg-primary_green py-2 px-5 w-full mt-4 cursor-pointer">
+                <div className="flex items-center gap-4 rounded-3xl bg-primary_green py-2 px-2 w-full mt-4 cursor-pointer">
                   <div className="bg-white rounded-full w-8 h-8 flex items-center justify-center">
                     <MdKeyboardArrowRight className="text-primary_green w-[24px] h-[26px]" />
                   </div>
@@ -54,45 +73,46 @@ export default function ListTour() {
             {/* Tour List */}
             <div className="md:w-3/4 w-full">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
-                {Array(6)
-                  .fill(0)
-                  .map((_, index) => (
-                    <div
-                      key={index}
-                      className="rounded-3xl w-full flex flex-col bg-white shadow-lg hover:scale-105 transition-transform"
-                    >
-                      <img
-                        src="/test.jpg"
-                        className="w-full h-52 md:h-56 rounded-3xl object-cover"
-                      />
-                      <div className="p-4 flex-1 flex flex-col justify-between">
-                        <div>
-                          <div className="flex justify-between">
-                            <div className="flex items-center gap-2">
-                              <SiStartrek className="text-primary_green-bold" />
-                              <span className="text-primary_green">
-                                Xuất phát: Hà Nội
+                {listBlog.slice(3, 6).map((item) => (
+                  <div
+                    key={item.id}
+                    className="rounded-3xl w-full flex flex-col bg-white shadow-lg hover:scale-105 transition-transform"
+                  >
+                    <img
+                      src={item.overview.image}
+                      className="w-full h-52 md:h-56 rounded-3xl object-cover"
+                    />
+                    <div className="p-4 flex-1 flex flex-col justify-between">
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex items-center gap-2">
+                            <SiStartrek className="text-primary_green-bold" />
+                            <span className="text-primary_green">
+                              Xuất phát: Hà Nội
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <FaRegClock className="text-primary_green-bold" />
+                            <span className="text-primary_green">
+                              {item.overview.day}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="mt-2">
+                          <p className="text-lg font-bold line-clamp-2">
+                            {item.overview.title}
+                          </p>
+                          <div className="flex justify-between mt-2">
+                            <div className="flex flex-col">
+                              <span className="text-lg text-primary_green font-bold">
+                                {item.overview.priceOld}
+                              </span>
+                              <span className="text-md line-through text-label font-bold">
+                                {item.overview.priceNew}
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <FaRegClock className="text-primary_green-bold" />
-                              <span className="text-primary_green">5N4D</span>
-                            </div>
-                          </div>
-                          <div className="mt-2">
-                            <p className="text-lg font-bold line-clamp-2">
-                              Vé Tour giao lộ thế giới Grand Word Phú Quốc
-                            </p>
-                            <div className="flex justify-between mt-2">
-                              <div className="flex flex-col">
-                                <span className="text-lg text-primary_green font-bold">
-                                  13.590.000 đ
-                                </span>
-                                <span className="text-md line-through text-label font-bold">
-                                  14.990.000 đ
-                                </span>
-                              </div>
-                              <div className="flex items-center gap-2 border border-primary_green rounded-3xl py-1 px-5 cursor-pointer">
+                            <Link href={"/tour/list-tour/" + item.id}>
+                              <div className="flex items-center gap-2 border border-primary_green rounded-3xl py-1 px-4 cursor-pointer">
                                 <span className="text-primary_green">
                                   Khám phá
                                 </span>
@@ -100,12 +120,13 @@ export default function ListTour() {
                                   <MdKeyboardArrowRight className="text-white w-[24px] h-[26px]" />
                                 </div>
                               </div>
-                            </div>
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
               {/* Pagination */}
               <div className="mt-8 flex justify-center">

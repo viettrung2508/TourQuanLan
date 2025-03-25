@@ -53,9 +53,7 @@ export default function Footer() {
               <h1 className="text-sm font-semibold">Liên hệ hotline:</h1>
             </div>
             <div className="ml-6 text-sm">
-              <p>097.112.0000</p>
-              <p>039.321.5161</p>
-              <p>097.940.2888</p>
+              <p>0399.171.866</p>
             </div>
           </div>
           <div className="flex items-center gap-2 mt-4">
@@ -64,7 +62,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2 mt-4">
             <IoGlobeOutline size={18} className="text-primary_green-bold" />
-            <h2 className="text-sm">www.quanlanecotrip.com.vn</h2>
+            <h2 className="text-sm">www.quanlanecotrip.vn</h2>
           </div>
         </div>
 

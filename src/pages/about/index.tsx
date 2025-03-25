@@ -1,5 +1,6 @@
 import BlockImageRight from "@/components/about/BlockImageRight";
 import Commit from "@/components/about/Commit";
+import { Founders } from "@/components/about/Founders";
 import Hero from "@/components/about/Hero";
 
 export default function About() {
@@ -7,7 +8,7 @@ export default function About() {
     <div>
       <Hero />
       {/* <Content /> */}
-      {/* <Founders /> */}
+      <Founders />
       <Commit />
       <BlockImageRight />
     </div>

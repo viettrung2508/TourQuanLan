@@ -19,7 +19,9 @@ export interface ITourBlogItem {
 
 export interface IOverviewTourBlog {
   title: string;
-  description: string;
+  priceOld: string;
+  priceNew: string;
+  day: string;
   image: string;
   tagIds: ITourTagItem[];
 }

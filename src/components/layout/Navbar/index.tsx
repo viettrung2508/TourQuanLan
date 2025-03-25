@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 
 const header = [
   { title: "VỀ CHÚNG TÔI", link: "/about" },
-  { title: "TOUR QUAN LẠN", link: "/tour/list-tour" },
+  { title: "TOUR QUAN LẠN", link: "/tour" },
   { title: "DỊCH VỤ LƯU TRÚ", link: "/services" },
   { title: "TRẢI NGHIỆM THỰC TẾ", link: "/ticket" },
   { title: "KINH NGHIỆM DU LỊCH", link: "/experience" },

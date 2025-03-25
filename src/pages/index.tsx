@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <div>
         <Hero />
-        {/* <Services /> */}
+        <Services />
         <OurServices />
         <div className=" flex justify-center w-full h-full">
           {" "}

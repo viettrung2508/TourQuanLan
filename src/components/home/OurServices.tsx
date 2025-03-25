@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function OurServices() {
   const [value, setValue] = useState(0);
   useEffect(() => {
-    setValue(1000);
+    setValue(3000);
   }, []);
 
   return (
@@ -24,9 +24,13 @@ export default function OurServices() {
                 </h1>
               </div>
               <div className="my-6 lg:my-10">
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-xl">
                   Tự hào là đơn vị bản địa uy tín tại Quan Lạn giúp khách hàng
-                  nâng tầm trải nghiệm...
+                  nâng tầm trải nghiệm. Với sự am hiểu về phong tục tập quán,
+                  cũng như kiến thức phong phú về địa lý, chúng tôi luôn sẵn
+                  sàng giúp du khách khám phá Quan Lạn một cách trọn vẹn nhất,
+                  từ những bãi biển hoang sơ, cồn cát tuyệt đẹp đến các di tích
+                  lịch sử có giá trị văn hóa cao.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
