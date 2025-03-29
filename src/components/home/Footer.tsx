@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="text-black font-thin py-8 bg-gray-100">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto max-w-screen-2xl px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-44 mx-auto max-w-screen-2xl ">
         {/* Logo + Social */}
         <div className="text-center md:text-left">
           <Link href="/">
@@ -40,7 +40,7 @@ export default function Footer() {
           <h1 className="text-xl font-bold mb-4">Liên hệ với chúng tôi</h1>
           <div className="flex items-start gap-2">
             <IoLocationSharp
-              size={18}
+              size={36}
               className="text-primary_green-bold mt-1"
             />
             <p className="text-sm">
