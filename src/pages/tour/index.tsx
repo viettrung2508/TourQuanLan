@@ -43,7 +43,7 @@ export default function ListTour() {
 
       {/* Main Content */}
       <div className="w-full bg-primary_bg flex justify-center">
-        <div className="w-full max-w-screen-2xl px-4 md:px-8 lg:px-16 py-8">
+        <div className="w-full max-w-7xl px-4 md:px-8 lg:px-16 py-8">
           {/* Layout */}
           <div className="flex flex-col md:flex-row gap-8">
             {/* Sidebar */}
@@ -112,8 +112,8 @@ export default function ListTour() {
                               </span>
                             </div>
                             <Link href={"/tour/list-tour/" + item.id}>
-                              <div className="flex items-center gap-2 border border-primary_green rounded-3xl py-1 px-4 cursor-pointer">
-                                <span className="text-primary_green">
+                              <div className="flex items-center border border-primary_green rounded-3xl py-1 px-4 cursor-pointer">
+                                <span className="text-primary_green ">
                                   Khám phá
                                 </span>
                                 <div className="bg-primary_green rounded-full w-8 h-8 flex items-center justify-center">

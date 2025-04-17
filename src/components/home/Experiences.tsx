@@ -7,15 +7,15 @@ import { AnimatedTestimonials } from "../ui/animated-testimonials";
 const testimonials = [
   {
     quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-    name: "Michael Rodriguez",
-    designation: "CTO at InnovateSphere",
+      "Mình chưa từng nghĩ Quan Lạn lại đẹp và yên bình đến vậy. Nhờ Ecotrip mà chuyến đi lần này trọn vẹn từ A-Z: lịch trình hợp lý, hướng dẫn viên nhiệt tình, đồ ăn địa phương ngon và không gian lưu trú thì cực chill. Nhất định sẽ quay lại cùng Ecotrip trong hành trình tới.",
+    name: "Gia đình Cô Hà",
+    designation: "Gia đình Cô Hà",
     src: "/comment1.jpg",
   },
   {
     quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-    name: "Michael Rodriguez",
+      "Mình book tour theo nhóm bạn thân, và thật sự bất ngờ vì Ecotrip rất linh hoạt, chiều khách, lại gợi ý nhiều hoạt động cực chill. Team mình đã có những bức ảnh siêu đẹp và cả tá kỷ niệm vui nhộn.",
+    name: "Nhóm Bạn Thân Gen Z",
     designation: "CTO at InnovateSphere",
     src: "/comment1.jpg",
   },
@@ -43,7 +43,7 @@ const testimonials = [
 ];
 export function Experiences() {
   return (
-    <div className="h-screen w-full flex justify-center relative overflow-hidden bg-black">
+    <div className="h-screen  w-full flex justify-center relative overflow-hidden bg-black">
       <motion.img
         src="/hero12.jpg"
         className="h-full w-full object-cover absolute inset-0 [mask-image:radial-gradient(circle,transparent,black_80%)] pointer-events-none"

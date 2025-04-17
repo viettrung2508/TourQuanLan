@@ -10,7 +10,7 @@ import ChipTag from "@/common/experience/components/ChipTag";
 
 export default function SliderTour() {
   return (
-    <div className="px-4 md:px-8 lg:px-16 py-10">
+    <div className=" py-10 max-w-7xl mx-auto">
       {/* Tiêu đề */}
       <div className="text-5xl text-primary_green font-bold text-center py-10">
         Danh sách tour khám phá đảo Quan Lạn

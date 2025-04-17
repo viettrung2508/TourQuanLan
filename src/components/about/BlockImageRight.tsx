@@ -3,7 +3,7 @@ export default function BlockImageRight() {
     <div className="w-full">
       {/* Background Image Section */}
       <div className="bg-[url('/hero13.jpg')] bg-cover bg-center py-16">
-        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Grid Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Content */}

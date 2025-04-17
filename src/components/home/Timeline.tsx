@@ -43,8 +43,8 @@ export default function Timeline() {
   ];
 
   return (
-    <div className="bg-primary_bg">
-      <section className="max-w-screen-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-primary_bg w-full">
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-[#134f46] text-center">
           Quy trình đặt tour tại Quan Lạn Ecotrip
         </h1>
@@ -52,6 +52,7 @@ export default function Timeline() {
           <Swiper
             spaceBetween={16}
             freeMode={true}
+            watchOverflow={true}
             breakpoints={{
               320: { slidesPerView: 1.2 },
               480: { slidesPerView: 1.5 },
@@ -62,7 +63,7 @@ export default function Timeline() {
             }}
           >
             {steps.map((step, index) => (
-              <SwiperSlide key={index} className="!w-auto">
+              <SwiperSlide key={index}>
                 <div className="flex flex-col items-center p-4">
                   <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#138140]">
                     {step.number}

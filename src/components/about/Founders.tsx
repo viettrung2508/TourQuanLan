@@ -4,7 +4,7 @@ import React from "react";
 export function Founders() {
   return (
     <div className="bg-[#134f46]">
-      <div className="py-20 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Text Section */}
         <div className="mb-16 lg:mb-24 max-w-4xl">
           <h1 className="text-3xl sm:text-4xl text-white mb-4">

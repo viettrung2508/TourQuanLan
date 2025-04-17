@@ -52,7 +52,7 @@ export default function Experience() {
         ref={listBlogRef}
         className="bg-primary_bg pt-5 pb-10 -mt-24 md:-mt-32 rounded-t-[40px] flex justify-center"
       >
-        <div className="max-w-screen-2xl w-full px-4 md:px-8">
+        <div className="max-w-7xl w-full px-4 md:px-8">
           <div className="flex gap-2 items-center">
             <div className="w-1 h-1 bg-label rounded-full" />
             <p className="text-label">KINH NGHIỆM DU LỊCH</p>

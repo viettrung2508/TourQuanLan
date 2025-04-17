@@ -13,7 +13,7 @@ export default function OurServices() {
     <div className="relative mt-20">
       <div className="relative z-10">
         <div className="container mx-auto px-4 py-20">
-          <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:top-20 lg:left-32">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:top-20 lg:left-32">
             {/* Left Section */}
             <div className="lg:w-1/2 flex flex-col text-center lg:text-left">
               <div>

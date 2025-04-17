@@ -20,7 +20,7 @@ export default function TicketPage() {
         </p>
       </div>
       <div className="bg-white pt-5 pb-10 -mt-32 rounded-[40px] flex justify-center z-10 relative px-4">
-        <div className="max-w-screen-xl w-full">
+        <div className="max-w-7xl w-full">
           <p className="mt-10 font-bold text-primary_green-bold text-3xl md:text-2xl">
             Đại lý vé
           </p>
@@ -111,7 +111,7 @@ export default function TicketPage() {
         </div>
       </div>
       <div className="bg-[#DBEADD] pb-20 pt-36 -mt-32 flex justify-center">
-        <div className="max-w-screen-xl w-full px-4">
+        <div className="max-w-7xl w-full px-4">
           <SliderView />
         </div>
       </div>

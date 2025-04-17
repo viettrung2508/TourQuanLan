@@ -18,7 +18,7 @@ export default function Commit() {
         </div>
 
         {/* Team Section */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-2xl mx-auto gap-4 place-items-center">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-4 place-items-center">
           {/* Member 1 */}
           <div className="bg-white rounded-xl text-center p-6 shadow-md w-full max-w-sm">
             <img

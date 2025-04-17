@@ -8,7 +8,7 @@ export default function About() {
     <div>
       <Hero />
       {/* <Content /> */}
-      <Founders />
+      {/* <Founders /> */}
       <Commit />
       <BlockImageRight />
     </div>

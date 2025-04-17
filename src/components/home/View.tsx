@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function View() {
   return (
     <div className="bg-[#134f46] pb-6">
-      <div className="max-w-screen-2xl mx-auto px-4 pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto px-4 pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Left Section */}
         <div className="lg:col-span-2 flex flex-col text-center md:text-left">
           <h1 className="text-[#ffe49e] text-5xl md:text-6xl lg:text-7xl font-bold pb-8">

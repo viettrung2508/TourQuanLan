@@ -6,7 +6,7 @@ import { Tour_BLOG } from "@/common/tour/constants";
 export default function BlogTour({ blog }: { blog?: IDetailTourBlog }) {
   return (
     <div className="w-full bg-primary_bg py-36 flex justify-center">
-      <div className="w-full max-w-screen-xl">
+      <div className="w-full max-w-7xl">
         <div>
           {blog?.heading.map((item, index) => (
             <p

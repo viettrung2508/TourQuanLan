@@ -31,7 +31,7 @@ export default function Navbar() {
         isOpacity ? "bg-opacity-90" : "bg-opacity-100"
       }`}
     >
-      <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-4">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center w-[168px] gap-2">
@@ -48,7 +48,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-20">
+        <div className="hidden md:flex space-x-14">
           {header.map((item) => (
             <Link key={item.title} href={item.link}>
               <div

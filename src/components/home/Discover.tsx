@@ -42,7 +42,7 @@ const slideData = [
 export default function Discover() {
   return (
     <div className=" bg-primary_bg">
-      <div className="mx-auto max-w-screen-2xl  flex flex-col py-10">
+      <div className="mx-auto max-w-7xl  flex flex-col py-10">
         <h1 className="text-3xl lg:text-5xl font-bold text-[#134f46] mb-2 mx-2 lg:mb-4">
           Khám phá trọn vẹn
           <br /> vẻ đẹp Quan Lạn
@@ -66,7 +66,7 @@ export default function Discover() {
             VỀ CHÚNG TÔI
           </button>
         </Link>
-        <div className="relative overflow-hidden max-w-screen-2xl h-full py-20">
+        <div className="relative overflow-hidden max-w-7xl h-full py-20">
           <Carousel slides={slideData} />
         </div>
       </div>
