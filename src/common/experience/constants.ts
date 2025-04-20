@@ -2,27 +2,28 @@ import { TExperienceBlog, TExperienceTags } from "./interface";
 
 export const EXPERIENCE_TAGS: TExperienceTags = [
   {
-    id: '1',
-    name: 'Địa danh'
+    id: "1",
+    name: "Địa danh",
   },
   {
-    id: '2',
-    name: 'Kinh nghiệm du lịch'
+    id: "2",
+    name: "Kinh nghiệm du lịch",
   },
   {
-    id: '3',
-    name: 'Tin tức'
-  }
-]
+    id: "3",
+    name: "Tin tức",
+  },
+];
 
 export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "1",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Quan Lạn',
-      image: '/experience/quan-lan-detail-1.jpg',
-      description: "Bãi Biển Quan Lạn – Thiên Đường Hoang Sơ Giữa Lòng Quảng Ninh",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Quan Lạn",
+      image: "/experience/quan-lan-detail-1.jpg",
+      description:
+        "Bãi Biển Quan Lạn – Thiên Đường Hoang Sơ Giữa Lòng Quảng Ninh",
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Quan Lạn"],
@@ -77,10 +78,10 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "2",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Minh Châu',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Minh Châu",
       image: "/dji.jpg",
       description: "Bãi Biển Minh Châu – Viên Ngọc Sáng Giữa Lòng Đảo Quan Lạn",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Minh Châu"],
@@ -126,10 +127,10 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "3",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi tắm tiên',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi tắm tiên",
       image: "/baitamtien.jpg",
       description: "Bãi Tắm Tiên – Nét Hoang Sơ Bí Ẩn Giữa Đảo Quan Lạn",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi tắm tiên"],
@@ -180,10 +181,11 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "4",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Ngọc',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi biển Ngọc",
       image: "/bienngoc.jpg",
-      description: "Bãi Biển Ngọc – Nơi Thiên Nhiên Hòa Quyện Với Sự Tinh Khiết Tại Đảo Quan Lạn",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      description:
+        "Bãi Biển Ngọc – Nơi Thiên Nhiên Hòa Quyện Với Sự Tinh Khiết Tại Đảo Quan Lạn",
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi biển Ngọc"],
@@ -237,10 +239,10 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "5",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi rùa',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi rùa",
       image: "/bairua.jpg",
       description: "Bãi Rùa – Góc Bình Yên Hoang Sơ Trên Đảo Quan Lạn",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi rùa"],
@@ -285,10 +287,10 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "6",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi Robinson',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi Robinson",
       image: "/robinson.jpg",
       description: "Vẻ đẹp tự nhiên của bãi biển Robinson",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi Robinson"],
@@ -327,10 +329,11 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
   {
     id: "7",
     overview: {
-      title: 'TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi đá tình yêu',
+      title: "TOP 7 BÃI BIỂN Ở QUAN LẠN - Bãi đá tình yêu",
       image: "/baidatinhyeu.jpg",
-      description: "Bãi Đá Tình Yêu ở Đảo Quan Lạn: Điểm đến lãng mạn giữa thiên nhiên hoang sơ",
-      tagIds: [EXPERIENCE_TAGS[0]]
+      description:
+        "Bãi Đá Tình Yêu ở Đảo Quan Lạn: Điểm đến lãng mạn giữa thiên nhiên hoang sơ",
+      tagIds: [EXPERIENCE_TAGS[0]],
     },
     detail: {
       heading: ["TOP 7 BÃI BIỂN Ở QUAN LẠN - ", "Bãi đá tình yêu"],
@@ -360,6 +363,201 @@ export const EXPERIENCE_BLOG: TExperienceBlog = [
           content: [
             {
               text: "Bãi Đá Tình Yêu không chỉ là một nơi đẹp mắt, mà còn là một không gian đầy cảm xúc, là điểm đến lý tưởng cho những đôi lứa muốn tìm kiếm sự lãng mạn giữa thiên nhiên hùng vĩ. Với cảnh quan hoang sơ, yên bình và không khí trong lành, đây chắc chắn sẽ là một trải nghiệm khó quên đối với những ai yêu thích sự tĩnh lặng và vẻ đẹp của biển đảo.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "8",
+    overview: {
+      title: "Trải nghiệm thực tế - Soi rúc",
+      image: "/soiruc.jpg",
+      description:
+        "Trải nghiệm làm ngư dân đi soi rúc ở đảo Quan Lạn: Một hành trình thú vị và đầy màu sắc",
+      tagIds: [EXPERIENCE_TAGS[0]],
+    },
+    detail: {
+      heading: ["Trải nghiệm thực tế - Soi rúc"],
+      body: [
+        {
+          title:
+            "Trải nghiệm làm ngư dân đi soi rúc ở đảo Quan Lạn: Một hành trình thú vị và đầy màu sắc",
+          content: [
+            {
+              text: "Đảo Quan Lạn, một điểm đến hấp dẫn ở Quảng Ninh, không chỉ nổi tiếng với những bãi biển xinh đẹp và phong cảnh tuyệt vời, mà còn là nơi bạn có thể tham gia vào những hoạt động mang đậm nét văn hóa địa phương. Một trong những trải nghiệm độc đáo nhất là trải nghiệm làm ngư dân đi soi rúc – một hoạt động đánh bắt hải sản truyền thống đầy thú vị mà bạn không thể bỏ qua khi đến với đảo Quan Lạn.",
+              image: "/soiruc1.jpg",
+            },
+          ],
+        },
+        {
+          title: "Soi rúc là gì?",
+          content: [
+            {
+              text: "'Soi rúc' là một phương pháp đánh bắt hải sản đặc trưng của người dân đảo Quan Lạn. Từ 'rúc' ở đây chỉ là các loại hải sản sống dưới đáy biển, như sò, nghêu, hến… Trong quá trình soi rúc, ngư dân sử dụng đèn soi, kết hợp với những chiếc xuồng nhỏ để di chuyển qua các khu vực có nhiều hải sản, soi sáng dưới đáy biển và thu hoạch hải sản.",
+            },
+          ],
+        },
+        {
+          title: "Hành trình trải nghiệm soi rúc",
+          content: [
+            {
+              text: "Khi tham gia vào trải nghiệm này, bạn sẽ được cùng ngư dân địa phương ra biển vào buổi tối, lúc thủy triều xuống, để bắt đầu hành trình soi rúc. Với ánh đèn soi rực sáng, bạn sẽ có cơ hội chứng kiến những sinh vật biển nhỏ bé nhưng vô cùng phong phú dưới đáy biển. Đặc biệt, đây là lúc bạn có thể chiêm ngưỡng một phần của cuộc sống biển về đêm, khi mà những con sò, nghêu, hến... nhô lên khỏi cát và được thu gom vào giỏ.",
+            },
+          ],
+        },
+        {
+          title: "Cảm giác làm ngư dân thực thụ",
+          content: [
+            {
+              text: "Đi soi rúc không chỉ là một hoạt động giải trí thú vị mà còn giúp bạn hiểu hơn về cuộc sống của ngư dân nơi đây. Bạn sẽ cảm nhận được sự vất vả, kiên trì và lòng yêu biển của những người dân địa phương. Cùng ngư dân chèo thuyền, soi đèn, bạn sẽ tìm hiểu được các kỹ thuật đánh bắt thủ công, cũng như mối quan hệ mật thiết giữa con người và thiên nhiên.",
+            },
+          ],
+        },
+        {
+          title: "Hải sản tươi ngon sau chuyến đi soi rúc",
+          content: [
+            {
+              text: "Sau khi hoàn thành chuyến đi soi rúc, bạn sẽ được thưởng thức những món hải sản tươi ngon mà bạn vừa thu hoạch được. Những con sò, nghêu, hến, ốc sẽ được chế biến thành những món ăn đặc sản như sò nướng, nghêu hấp sả, hay canh hến nấu rau răm... Vị ngọt tự nhiên của hải sản, kết hợp với các gia vị dân dã, sẽ khiến bạn cảm thấy thật sự thỏa mãn.",
+            },
+          ],
+        },
+        {
+          title: "Tại sao nên thử trải nghiệm này?",
+          content: [
+            {
+              text: "Khám phá văn hóa địa phương: Trải nghiệm soi rúc giúp bạn hiểu thêm về đời sống ngư dân trên đảo Quan Lạn và những phương pháp đánh bắt hải sản truyền thống. Thư giãn giữa thiên nhiên: Hoạt động soi rúc diễn ra vào ban đêm, giúp bạn tận hưởng sự tĩnh lặng của biển cả, ngắm nhìn bầu trời đầy sao và cảm nhận không khí trong lành, yên bình. Tận hưởng hải sản tươi ngon: Bạn sẽ được thưởng thức các món ăn chế biến từ hải sản tươi sống, mang đậm hương vị biển cả. Một trải nghiệm khó quên: Đây là một hoạt động độc đáo và mới lạ, giúp bạn có những kỷ niệm đặc biệt trong chuyến du lịch của mình.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "9",
+    overview: {
+      title: "Trải nghiệm thực tế - Soi còng gió",
+      image: "/robinson.jpg",
+      description:
+        "Trải nghiệm làm ngư dân đi soi còng gió ở đảo Quan Lạn: Một hành trình đầy hấp dẫn",
+      tagIds: [EXPERIENCE_TAGS[0]],
+    },
+    detail: {
+      heading: ["Trải nghiệm thực tế - Soi còng gió"],
+      body: [
+        {
+          title:
+            "Trải nghiệm làm ngư dân đi soi còng gió ở đảo Quan Lạn: Một hành trình đầy hấp dẫn",
+          content: [
+            {
+              text: "Đảo Quan Lạn, thuộc tỉnh Quảng Ninh, không chỉ nổi bật với vẻ đẹp hoang sơ và những bãi biển tuyệt đẹp mà còn là nơi lưu giữ những nét văn hóa truyền thống đặc sắc của người dân nơi đây. Một trong những hoạt động đặc biệt và hấp dẫn mà du khách không thể bỏ qua khi đến Quan Lạn là trải nghiệm làm ngư dân đi soi còng gió. Đây là một phương pháp đánh bắt thủ công độc đáo, giúp bạn hiểu rõ hơn về đời sống ngư dân và tận hưởng cảm giác gần gũi với thiên nhiên.",
+              image: "/robinson.jpg",
+            },
+          ],
+        },
+        {
+          title: "Còng gió là gì?",
+          content: [
+            {
+              text: "Còng gió là một loại cua sống dưới đáy cát, đặc biệt xuất hiện nhiều vào mùa thu – đông, khi gió biển bắt đầu thổi mạnh. Chúng có hình dáng giống cua nhưng có kích thước nhỏ hơn và có chân dài, di chuyển rất nhanh. Còng gió là món ăn đặc sản của đảo Quan Lạn, được chế biến thành nhiều món ngon như còng gió xào me, còng gió rang muối, hay còng gió nướng. Chính vì vậy, việc soi còng gió trở thành một hoạt động thú vị và đầy thử thách đối với những ai yêu thích khám phá cuộc sống của ngư dân.",
+            },
+          ],
+        },
+        {
+          title: "Hành trình trải nghiệm soi còng gió",
+          content: [
+            {
+              text: "Trải nghiệm soi còng gió sẽ bắt đầu vào lúc chiều tối hoặc ban đêm, khi thủy triều xuống và thời tiết trở nên mát mẻ. Bạn sẽ được tham gia cùng các ngư dân địa phương, di chuyển bằng xuồng nhỏ hoặc đi bộ trên các bãi cát, sử dụng đèn soi để tìm kiếm còng gió. Còng gió thường ẩn mình dưới cát, và việc tìm chúng yêu cầu sự tinh mắt và khéo léo.",
+            },
+          ],
+        },
+        {
+          title: "Cảm giác làm ngư dân thực thụ",
+          content: [
+            {
+              text: "Đi soi rúc không chỉ là một hoạt động giải trí thú vị mà còn giúp bạn hiểu hơn về cuộc sống của ngư dân nơi đây. Bạn sẽ cảm nhận được sự vất vả, kiên trì và lòng yêu biển của những người dân địa phương. Cùng ngư dân chèo thuyền, soi đèn, bạn sẽ tìm hiểu được các kỹ thuật đánh bắt thủ công, cũng như mối quan hệ mật thiết giữa con người và thiên nhiên.",
+            },
+          ],
+        },
+        {
+          title: "Thưởng thức còng gió tươi ngon",
+          content: [
+            {
+              text: "Sau khi thu hoạch được còng gió, bạn sẽ được thưởng thức những món ăn đặc sản tuyệt vời được chế biến từ nguyên liệu tươi sống. Còng gió có thể được chế biến thành các món như còng gió rang muối, còng gió xào me, hay còng gió nướng. Với hương vị tươi ngon, thịt còng gió ngọt, thơm, sẽ làm hài lòng bất kỳ thực khách nào.",
+            },
+          ],
+        },
+        {
+          title: "Tại sao nên thử trải nghiệm soi còng gió?",
+          content: [
+            {
+              text: "Khám phá văn hóa và cuộc sống ngư dân: Trải nghiệm soi còng gió giúp bạn hiểu hơn về đời sống của người dân địa phương, cũng như phương pháp đánh bắt hải sản thủ công độc đáo. Hòa mình vào thiên nhiên: Bạn sẽ được tận hưởng không khí trong lành của biển cả, ngắm nhìn bãi cát trắng và lắng nghe tiếng sóng vỗ về trong một không gian yên tĩnh và lãng mạn. Trải nghiệm thú vị và mới lạ: Đây là một hoạt động hiếm có và đầy thử thách, rất phù hợp cho những ai yêu thích khám phá và thử sức mình với những công việc địa phương. Thưởng thức hải sản tươi ngon: Sau khi soi còng gió, bạn sẽ được thưởng thức những món ăn từ hải sản tươi sống, là sự kết hợp tuyệt vời giữa trải nghiệm và ẩm thực.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "10",
+    overview: {
+      title: "Trải nghiệm thực tế - Câu mực",
+      image: "/caumuc.jpg",
+      description:
+        "Trải nghiệm làm ngư dân đi câu mực ở đảo Quan Lạn: Một hành trình kỳ thú giữa biển đêm",
+      tagIds: [EXPERIENCE_TAGS[0]],
+    },
+    detail: {
+      heading: ["Trải nghiệm thực tế - Câu mực"],
+      body: [
+        {
+          title:
+            "Trải nghiệm làm ngư dân đi câu mực ở đảo Quan Lạn: Một hành trình kỳ thú giữa biển đêm",
+          content: [
+            {
+              text: "Đảo Quan Lạn, thuộc Quảng Ninh, không chỉ nổi bật với những bãi biển xinh đẹp và làn nước trong vắt mà còn là nơi lưu giữ những hoạt động nghề truyền thống đầy hấp dẫn. Một trong những trải nghiệm đặc biệt nhất mà bạn không thể bỏ qua khi đến đây là trải nghiệm làm ngư dân đi câu mực. Đây là một hoạt động vô cùng thú vị và độc đáo, giúp bạn hòa mình vào cuộc sống của những ngư dân địa phương và khám phá vẻ đẹp của biển đêm.",
+              image: "/caumuc1.jpg",
+            },
+          ],
+        },
+        {
+          title: "Câu mực là gì?",
+          content: [
+            {
+              text: "Câu mực là một phương pháp đánh bắt thủ công phổ biến tại đảo Quan Lạn, đặc biệt là vào ban đêm. Mực ở đây thường có chất lượng rất tốt, thịt ngọt và tươi ngon, được xem là một trong những đặc sản của biển đảo. Câu mực thường được thực hiện bằng cách sử dụng những chiếc đèn lớn để thu hút mực, sau đó dùng cần câu hoặc lưỡi câu đặc biệt để bắt chúng.",
+            },
+          ],
+        },
+        {
+          title: "Hành trình trải nghiệm câu mực",
+          content: [
+            {
+              text: "Trải nghiệm làm ngư dân đi câu mực bắt đầu vào lúc chiều tối, khi trời bắt đầu tối dần và không khí biển trở nên mát mẻ. Bạn sẽ được tham gia cùng những ngư dân địa phương ra biển bằng chiếc thuyền nhỏ, đi ra vùng nước sâu để bắt đầu chuyến câu mực.",
+            },
+          ],
+        },
+        {
+          title: "Cảm giác làm ngư dân thực thụ",
+          content: [
+            {
+              text: "Đi câu mực không chỉ là một hoạt động thú vị mà còn là cơ hội để bạn tìm hiểu về công việc của ngư dân, cùng họ chia sẻ những câu chuyện về biển cả và những lần đi đánh bắt. Cảm giác hòa mình vào biển đêm, giữa không gian yên tĩnh chỉ có tiếng sóng vỗ và ánh sáng đèn rực rỡ sẽ mang đến cho bạn một trải nghiệm khó quên.",
+            },
+          ],
+        },
+        {
+          title: "Thưởng thức mực tươi ngon ngay tại chỗ",
+          content: [
+            {
+              text: "Sau khi kết thúc chuyến đi câu, bạn sẽ có cơ hội thưởng thức những món ăn được chế biến từ mực tươi ngon. Những con mực vừa mới được câu lên có thể được chế biến ngay tại chỗ thành các món như mực nướng, mực xào chua ngọt, hay mực hấp, tất cả đều giữ được độ tươi ngon và ngọt tự nhiên.",
+            },
+          ],
+        },
+        {
+          title: "Tại sao nên thử trải nghiệm câu mực ở đảo Quan Lạn?",
+          content: [
+            {
+              text: "Khám phá nghề đánh bắt truyền thống: Trải nghiệm câu mực giúp bạn hiểu thêm về công việc của ngư dân nơi đây, cũng như những phương pháp đánh bắt thủ công độc đáo. Hòa mình vào thiên nhiên: Câu mực vào ban đêm là dịp để bạn tận hưởng không khí biển cả trong lành, ngắm nhìn bầu trời đầy sao và tận hưởng sự tĩnh lặng của biển đêm. Cảm giác thư giãn và phiêu lưu: Câu mực là một hoạt động thú vị, kết hợp giữa thư giãn và phiêu lưu, giúp bạn có những kỷ niệm đáng nhớ trong chuyến du lịch. Thưởng thức hải sản tươi ngon: Sau khi câu mực, bạn sẽ được thưởng thức những món hải sản tươi sống, mang đậm hương vị biển cả, là một phần thưởng xứng đáng cho sự nỗ lực trong hành trình câu mực.",
             },
           ],
         },
