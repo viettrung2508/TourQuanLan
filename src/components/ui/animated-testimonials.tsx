@@ -45,7 +45,7 @@ export const AnimatedTestimonials = ({
   };
 
   return (
-    <div className="max-w-full mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-16">
+    <div className="max-w-full mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 pb-16">
       <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         {/* Image Section */}
         <div className="w-full md:w-1/2">
@@ -120,9 +120,7 @@ export const AnimatedTestimonials = ({
             <h3 className="text-2xl font-bold  text-white">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-white">
-              {testimonials[active].designation}
-            </p>
+
             <motion.p className="text-lg  text-neutral-300 mt-6">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span

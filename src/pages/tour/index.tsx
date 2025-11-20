@@ -73,7 +73,7 @@ export default function ListTour() {
             {/* Tour List */}
             <div className="md:w-3/4 w-full">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
-                {listBlog.slice(3, 6).map((item) => (
+                {listBlog.map((item) => (
                   <div
                     key={item.id}
                     className="rounded-3xl w-full flex flex-col bg-white shadow-lg hover:scale-105 transition-transform"

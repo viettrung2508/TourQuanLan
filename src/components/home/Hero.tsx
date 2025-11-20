@@ -48,11 +48,7 @@ export const products = [
     link: "https://ui.aceternity.com",
     thumbnail: "/hero8.jpg",
   },
-  {
-    title: "Tailwind Master Kit",
 
-    thumbnail: "/hero9.jpg",
-  },
   {
     title: "SmartBridge",
 
