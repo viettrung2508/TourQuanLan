@@ -86,7 +86,7 @@ export default function OurServices() {
         </div>
       </div>
       <div
-        className="absolute inset-0 bg-cover bg-center -z-10 h-[1000] object-cover"
+        className="absolute inset-0 bg-cover bg-center -z-10  object-cover"
         style={{ backgroundImage: `url('/bg_discover.png')` }}
       ></div>
     </div>

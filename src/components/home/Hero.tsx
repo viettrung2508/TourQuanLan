@@ -7,76 +7,75 @@ export function Hero() {
 }
 export const products = [
   {
-    title: "Moonbeam",
+    title: "",
 
     thumbnail: "/hero1.jpg",
   },
   {
-    title: "Cursor",
+    title: "",
 
     thumbnail: "/hero2.jpg",
   },
   {
-    title: "Rogue",
+    title: "",
 
     thumbnail: "/hero3.jpg",
   },
 
   {
-    title: "Editorially",
+    title: "",
 
     thumbnail: "/hero4.jpg",
   },
   {
-    title: "Editrix AI",
+    title: "",
 
     thumbnail: "/hero5.jpg",
   },
   {
-    title: "Pixel Perfect",
+    title: "",
 
     thumbnail: "/hero6.jpg",
   },
 
   {
-    title: "Algochurn",
+    title: "",
 
     thumbnail: "/hero7.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail: "/hero8.jpg",
-  },
+    title: "",
 
+    thumbnail: "/hero3.jpg",
+  },
   {
-    title: "SmartBridge",
+    title: "",
 
     thumbnail: "/hero10.jpg",
   },
   {
-    title: "Renderwork Studio",
+    title: "",
 
     thumbnail: "/hero11.jpg",
   },
 
   {
-    title: "Creme Digital",
+    title: "",
 
     thumbnail: "/hero12.jpg",
   },
   {
-    title: "Golden Bells Academy",
+    title: "",
 
     thumbnail: "/hero13.jpg",
   },
   {
-    title: "Invoker Labs",
+    title: "",
 
     thumbnail: "/hero15.jpg",
   },
   {
-    title: "E Free Invoice",
+    title: "",
 
     thumbnail: "/hero14.jpg",
   },
