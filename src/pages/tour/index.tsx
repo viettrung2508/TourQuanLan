@@ -12,15 +12,19 @@ import Link from "next/link";
 export default function ListTour() {
   const countBlogInPage = 6;
   const [page, setPage] = useState<number>(1);
-  const [listBlog, setListBlog] = useState<TTourBlog>(Tour_BLOG.slice(0, 6));
+  const [listBlog, setListBlog] = useState<TTourBlog>(
+    Tour_BLOG.slice(0, countBlogInPage)
+  );
   const listBlogRef = useRef<HTMLDivElement>(null);
+  const totalPage = Math.ceil(Tour_BLOG.length / countBlogInPage);
+
   // const firstBlog = listBlog?.[0];
   // const secondBlog = listBlog?.[1];
   // const thirdBlog = listBlog?.[2];
 
   const onChangePage = (newPage: number) => {
     if (listBlogRef?.current) {
-      listBlogRef.current.scrollIntoView();
+      listBlogRef.current.scrollIntoView({ behavior: "smooth" });
     }
     const newListBlog = Tour_BLOG.slice(
       (newPage - 1) * countBlogInPage,
@@ -71,7 +75,7 @@ export default function ListTour() {
             </div>
 
             {/* Tour List */}
-            <div className="md:w-3/4 w-full">
+            <div className="md:w-3/4 w-full" ref={listBlogRef}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
                 {listBlog.map((item) => (
                   <div
@@ -88,7 +92,7 @@ export default function ListTour() {
                           <div className="flex items-center gap-2">
                             <SiStartrek className="text-primary_green-bold" />
                             <span className="text-primary_green">
-                              Xuất phát: Hà Nội
+                              Xuất phát : Hà Nội
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -105,10 +109,10 @@ export default function ListTour() {
                           <div className="flex justify-between mt-2">
                             <div className="flex flex-col">
                               <span className="text-lg text-primary_green font-bold">
-                                {item.overview.priceOld}
+                                {item.overview.priceNew}
                               </span>
                               <span className="text-md line-through text-label font-bold">
-                                {item.overview.priceNew}
+                                {item.overview.priceOld}
                               </span>
                             </div>
                             <Link href={"/tour/list-tour/" + item.id}>
@@ -116,7 +120,7 @@ export default function ListTour() {
                                 <span className="text-primary_green ">
                                   Khám phá
                                 </span>
-                                <div className="bg-primary_green rounded-full w-8 h-8 flex items-center justify-center">
+                                <div className="bg-primary_green rounded-full w-8 h-8 flex items-center justify-center  ml-2 ">
                                   <MdKeyboardArrowRight className="text-white w-[24px] h-[26px]" />
                                 </div>
                               </div>
@@ -130,7 +134,11 @@ export default function ListTour() {
               </div>
               {/* Pagination */}
               <div className="mt-8 flex justify-center">
-                <Pagination page={page} onSetPage={setPage} total={6} />
+                <Pagination
+                  page={page}
+                  onSetPage={onChangePage}
+                  total={totalPage} // thay vì 6
+                />
               </div>
             </div>
           </div>

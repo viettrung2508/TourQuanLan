@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         {/* <Services /> */}
         <OurServices />
-        <div className=" flex justify-center w-full h-full">
+        <div className=" flex justify-center w-full h-full ">
           {" "}
           <video
             autoPlay
