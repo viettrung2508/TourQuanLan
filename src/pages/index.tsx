@@ -9,30 +9,16 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Hero />
-        {/* <Services /> */}
-        {/* <Services /> */}
+        {/* <Hero />
+        
         <OurServices />
-        {/* <div className=" flex justify-center w-full h-full ">
-          {" "}
-          <video
-            autoPlay
-            controls
-            muted
-            loop
-            className=" w-full h-full object-cover"
-          >
-            {" "}
-            <source src="/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div> */}
+        
         <SliderTour />
-        {/* <View /> */}
 
         <Discover />
         <Experiences />
-        <Timeline />
+        <Timeline /> */}
+        404
       </div>
     </div>
   );
